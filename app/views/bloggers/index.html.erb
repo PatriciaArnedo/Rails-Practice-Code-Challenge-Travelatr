@@ -1,0 +1,14 @@
+<h2>Blogger Directory</h2>
+
+<ul>
+<% @bloggers.each do |blogger| %>
+    <li><%= link_to blogger.name, blogger_path(blogger) %>
+<% end%>
+</ul>
+
+<p><%= link_to "Create New Blogger", new_blogger_path %></p>
+
+<p><%= link_to "See All Posts", posts_path %></p>
+
+<p><%= link_to "See All Destinations", destinations_path %></p>
+
